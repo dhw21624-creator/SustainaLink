@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SustainaLink | Smart Campus</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  </head>
+  <body>
+    <header class="app-header">
+      <div class="brand">
+        <span class="logo">🌱</span>
+        <span class="brand-text" id="brandText">SustainaLink Smart Campus</span>
+      </div>
+      <nav class="app-nav">
+        <button id="langToggle" class="ghost">EN / 中文</button>
+        <button id="logoutBtn" class="ghost" style="display:none">Logout / 登出</button>
+      </nav>
+    </header>
+
+    <main id="app" class="app-main">
+      <!-- Content injected by app.js -->
+    </main>
+
+    <footer class="app-footer">
+      <div>♻️ ⚡ 🏆 🌱</div>
+      <div id="footerText">Prototype • Mock Data • Hong Kong Polytechnic University (WK)</div>
+    </footer>
+
+    <script src="src/i18n.js"></script>
+    <script src="src/data.js"></script>
+    <script src="src/app.js"></script>
+  </body>
+</html>
+

@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Redirecting…</title>
+    <style>
+      body { font-family: system-ui, -apple-system, Arial; padding: 24px; }
+    </style>
+  </head>
+  <body>
+    <p>Redirecting to SustainaLink…</p>
+    <script>
+      // Redirect any unknown path to index.html while preserving hash routing
+      (function() {
+        var path = location.pathname;
+        var base = path.replace(/\/[^/]*$/, '/');
+        var target = base + 'index.html' + (location.hash || '');
+        location.replace(target);
+      })();
+    </script>
+  </body>
+</html>
+
